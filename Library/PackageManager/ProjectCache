@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637873803283393275
-    m_Hash: 2285250427
+      ticks: 637878427369069954
+    m_Hash: 426178464
   m_LockFileStatus:
     m_FilePath: C:/Users/dspencer/Documents/GitHub/BobRossStudio/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637873803283492999
-    m_Hash: 3404100721
+      ticks: 637878427369180056
+    m_Hash: 252135705
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -201,7 +201,7 @@ m_ResolvedPackages:
     version: default
   resolvedDependencies:
   - name: com.unity.ide.visualstudio
-    version: 2.0.14
+    version: 2.0.15
   - name: com.unity.test-framework
     version: 1.1.31
   - name: com.unity.ext.nunit
@@ -278,7 +278,7 @@ m_ResolvedPackages:
   - name: com.unity.xr.oculus
     version: 3.0.1
   - name: com.unity.xr.management
-    version: 4.2.0
+    version: 4.2.1
   - name: com.unity.modules.subsystems
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
@@ -409,12 +409,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 3.0.13
     nextVersion: 
-- packageId: com.unity.ide.visualstudio@2.0.14
+- packageId: com.unity.ide.visualstudio@2.0.15
   testable: 0
   isDirectDependency: 1
-  version: 2.0.14
+  version: 2.0.15
   source: 1
-  resolvedPath: C:\Users\dspencer\Documents\GitHub\BobRossStudio\Library\PackageCache\com.unity.ide.visualstudio@2.0.14
+  resolvedPath: C:\Users\dspencer\Documents\GitHub\BobRossStudio\Library\PackageCache\com.unity.ide.visualstudio@2.0.15
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -475,13 +475,13 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637782923640000000
+  datePublishedTicks: 637841884840000000
   documentationUrl: 
-  hasRepository: 0
+  hasRepository: 1
   repository:
-    type: 
-    url: 
-    revision: 
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
+    revision: ca1ece42f5a2c5484ba15a15bb975ccc1f6a1a3c
     path: 
   unityLifecycle:
     version: 2.0.14
@@ -1166,11 +1166,13 @@ m_ResolvedPackages:
     - 1.7.5
     - 1.7.6
     - 1.7.7
+    - 1.7.8
     - 1.8.0-pre.1
     compatible:
     - 1.7.6
     - 1.7.7
-    verified: 1.7.7
+    - 1.7.8
+    verified: 1.7.8
   dependencies:
   - name: com.unity.ugui
     version: 1.0.0
@@ -1206,12 +1208,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.7.6
     nextVersion: 
-- packageId: com.unity.xr.interaction.toolkit@2.0.1
+- packageId: com.unity.xr.interaction.toolkit@2.0.2
   testable: 0
   isDirectDependency: 1
-  version: 2.0.1
+  version: 2.0.2
   source: 1
-  resolvedPath: C:\Users\dspencer\Documents\GitHub\BobRossStudio\Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.1
+  resolvedPath: C:\Users\dspencer\Documents\GitHub\BobRossStudio\Library\PackageCache\com.unity.xr.interaction.toolkit@2.0.2
   assetPath: Packages/com.unity.xr.interaction.toolkit
   name: com.unity.xr.interaction.toolkit
   displayName: XR Interaction Toolkit
@@ -1250,6 +1252,7 @@ m_ResolvedPackages:
     - 2.0.0-pre.7
     - 2.0.0
     - 2.0.1
+    - 2.0.2
     compatible:
     - 0.0.6-preview
     - 0.9.0-preview
@@ -1270,6 +1273,7 @@ m_ResolvedPackages:
     - 2.0.0-pre.7
     - 2.0.0
     - 2.0.1
+    - 2.0.2
     verified: 
   dependencies:
   - name: com.unity.inputsystem
@@ -1329,23 +1333,23 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637824260500000000
+  datePublishedTicks: 637874566830000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.com/Unity-Technologies/com.unity.xr.interaction.toolkit.git
-    revision: 13fd4c583e33bc55a2002a74574fc713d069bb0c
+    revision: de6c9c113846c3ca4449d0285a4683bb9c87855e
     path: 
   unityLifecycle:
     version: 
     nextVersion: 1.0.0-pre.6
-- packageId: com.unity.xr.management@4.2.0
+- packageId: com.unity.xr.management@4.2.1
   testable: 0
   isDirectDependency: 1
-  version: 4.2.0
+  version: 4.2.1
   source: 1
-  resolvedPath: C:\Users\dspencer\Documents\GitHub\BobRossStudio\Library\PackageCache\com.unity.xr.management@4.2.0
+  resolvedPath: C:\Users\dspencer\Documents\GitHub\BobRossStudio\Library\PackageCache\com.unity.xr.management@4.2.1
   assetPath: Packages/com.unity.xr.management
   name: com.unity.xr.management
   displayName: XR Plugin Management
@@ -1458,13 +1462,13 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637704350680000000
+  datePublishedTicks: 637769778170000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/xr.sdk.management.git
-    revision: c8fb6583d6d04516909a8d2ab999a1dbe90ade50
+    revision: 9c99228887ff65cc0729434b3b9371d22b707cb9
     path: 
   unityLifecycle:
     version: 4.2.0
@@ -1522,7 +1526,7 @@ m_ResolvedPackages:
     version: 4.0.1
   resolvedDependencies:
   - name: com.unity.xr.management
-    version: 4.2.0
+    version: 4.2.1
   - name: com.unity.modules.subsystems
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
@@ -1647,7 +1651,7 @@ m_ResolvedPackages:
     version: 4.2.0
   resolvedDependencies:
   - name: com.unity.xr.management
-    version: 4.2.0
+    version: 4.2.1
   - name: com.unity.modules.subsystems
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
@@ -1740,7 +1744,7 @@ m_ResolvedPackages:
     version: 1.0.2
   resolvedDependencies:
   - name: com.unity.xr.management
-    version: 4.2.0
+    version: 4.2.1
   - name: com.unity.modules.subsystems
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
