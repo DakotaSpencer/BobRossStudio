@@ -20,7 +20,7 @@ public class WhiteboardEraser : MonoBehaviour
 
     void Start()
     {
-        _renderer = _tip.GetComponent<Renderer>();
+        _renderer = _whiteboard.GetComponent<Renderer>();
         _colors = Enumerable.Repeat(_renderer.material.color, _penSize * _penSize).ToArray();
         _tipHeight = _tip.localScale.y;
     }

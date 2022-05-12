@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Painting\Scripts\WhiteboardMarker.cs" />
     <Compile Include="Assets\Painting\Scripts\Whiteboard.cs" />
+    <Compile Include="Assets\Painting\Scripts\WhiteboardEraser.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\RequiredAssets\TextMesh Pro\Shaders\TMPro.cginc" />
