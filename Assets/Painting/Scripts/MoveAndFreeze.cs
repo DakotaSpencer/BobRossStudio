@@ -21,9 +21,9 @@ public class MoveAndFreeze : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        keypressCheckF = Input.GetKeyDown(KeyCode.F);
+        //keypressCheckF = Input.GetKeyDown(KeyCode.F);
         keypressCheckC = Input.GetKeyDown(KeyCode.C);
-        if (keypressCheckF) 
+        if (Input.GetKeyDown(KeyCode.F)) 
         {
 
             m_body.constraints = RigidbodyConstraints.FreezeAll;
