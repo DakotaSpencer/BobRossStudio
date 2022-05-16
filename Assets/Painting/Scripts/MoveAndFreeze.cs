@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class MoveAndFreeze : MonoBehaviour
 {
 
-    private Rigidbody m_body;
+    [SerializeField] public Rigidbody m_body;
     bool keypressCheckF;
     bool keypressCheckC;
 
@@ -13,8 +13,7 @@ public class MoveAndFreeze : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-        m_body = GetComponent<Rigidbody>();
+        m_body = transform.GetComponentInParent<Rigidbody>();
         m_body.constraints = RigidbodyConstraints.None;
     }
 
@@ -30,5 +29,4 @@ public class MoveAndFreeze : MonoBehaviour
             return;
         }
     }
-    
 }
