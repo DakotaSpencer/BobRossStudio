@@ -9,7 +9,7 @@ public class SaveWorld : MonoBehaviour
 {
     void SaveGame()
     {
-        object[] obj = GameObject.FindSceneObjectsOfType(typeof(GameObject));
+        object[] obj = GameObject.FindObjectsOfType(typeof (GameObject));
         SaveData data = new SaveData();
         foreach (object o in obj)
         {
