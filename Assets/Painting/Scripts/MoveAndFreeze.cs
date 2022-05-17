@@ -5,8 +5,8 @@ using UnityEngine.InputSystem;
 public class MoveAndFreeze : MonoBehaviour
 {
 
-    [SerializeField] public Rigidbody m_body;
-    [SerializeField]public GameObject objectHeld;
+    [SerializeField] private Rigidbody m_body;
+    [SerializeField] private GameObject objectHeld;
     bool keypressCheckF;
     bool keypressCheckC;
 
