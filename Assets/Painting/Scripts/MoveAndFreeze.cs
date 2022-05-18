@@ -4,31 +4,41 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class MoveAndFreeze : XRGrabInteractable
+public class MoveAndFreeze : MonoBehaviour
 {
-
     [SerializeField] private Rigidbody m_body;
     [SerializeField] private GameObject objectHeld;
     bool keypressCheckF;
     bool keypressCheckC;
+    bool frozen = false;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        //interactor = GetComponent<XRDirectInteractor>();
         //m_body = GameObject.Find(m_body.name).GetComponent<Rigidbody>();
         m_body.constraints = RigidbodyConstraints.None;
     }
 
     // Update is called once per frame
-    void Update()
+    public void Freeze()
     {
-        //keypressCheckF = Input.GetKeyDown(KeyCode.F);
-        keypressCheckC = Input.GetKeyDown(KeyCode.C);
+        m_body.constraints = RigidbodyConstraints.FreezeAll;
+        frozen = true;
+    }
 
-        if (Input.GetButtonDown("VR_PrimaryButton_LeftHand") && transform.GetComponent<XRGrabInteractable>())
+    public void Unfreeze()
+    {
+        m_body.constraints = RigidbodyConstraints.None;
+        frozen = false;
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F))
         {
-            m_body.constraints = RigidbodyConstraints.FreezeAll;
+            m_body.constraints = RigidbodyConstraints.None;
+            frozen = false;
         }
     }
 }
