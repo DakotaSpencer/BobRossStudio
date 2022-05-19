@@ -8,8 +8,6 @@ public class MoveAndFreeze : MonoBehaviour
 {
     [SerializeField] private Rigidbody m_body;
     [SerializeField] private GameObject objectHeld;
-    bool keypressCheckF;
-    bool keypressCheckC;
     bool frozen = false;
 
 
