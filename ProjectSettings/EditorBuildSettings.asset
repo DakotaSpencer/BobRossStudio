@@ -4,7 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 977500d65c16b8c499264eaa2a112477
+  - enabled: 1
+    path: Assets/Scenes/CampsiteNight.unity
+    guid: 212289d4b8b3b1d4a9eed207883d7d2d
+  - enabled: 1
+    path: Assets/Scenes/ForestScene.unity
+    guid: 489857a4c684462448dd06cfb72e20f2
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}

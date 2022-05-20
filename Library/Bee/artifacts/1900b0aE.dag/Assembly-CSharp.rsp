@@ -402,6 +402,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.SpatialTracking.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
+"Assets/Game Functionality/LoadScene.cs"
 "Assets/Game Functionality/SaveWorld.cs"
 "Assets/Menus/MainMenu.cs"
 "Assets/Painting/Scripts/CharacterMovementHelper.cs"
