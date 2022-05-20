@@ -56,24 +56,24 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\PSDLayerMappingStrategy.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\TexturePlatformSettingsModal.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\PSDImporter.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\Analytics.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\Tasks\ExtractLayerTask.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\TexturePlatformSettingsView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\Tasks\FlattenImageTask.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\ImportUtilites.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\PSDImportData.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\PSDImporterDataProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\PSDLayer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\SpriteData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\PSDImporterEditorLayerTreeView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\PSDImportPostProcessor.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\TexturePlatformSettingsController.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\PSDImporterEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\TexturePlatformSettingsModal.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\PSDImportData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\SpriteData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\PSDLayerMappingStrategy.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\TexturePlatformSettingsView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\PSDImporterEditorLayerTreeView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\PSDImportPostProcessor.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\TextureSettingsGUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\PSDImporter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\Tasks\ExtractLayerTask.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\Tasks\FlattenImageTask.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\PSDLayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.2d.psdimporter@6.0.3\Editor\Unity.2D.Psdimporter.Editor.asmdef" />
@@ -334,6 +334,9 @@
     <Reference Include="Unity.VisualScripting.IonicZip">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst.Cecil.Pdb">
+      <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
+    </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
@@ -352,12 +355,6 @@
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.6\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Cecil.Pdb">
-      <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Burst.Unsafe">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
@@ -369,6 +366,9 @@
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Rocks">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.6\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>

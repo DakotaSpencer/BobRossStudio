@@ -56,22 +56,22 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\External\LibTessDotNet\Tess.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\SpriteShapeGenerator.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\SplineUtility.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\External\LibTessDotNet\Dict.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\SpriteShape.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\External\LibTessDotNet\Sweep.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\External\LibTessDotNet\PriorityQueue.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\External\LibTessDotNet\Mesh.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\BezierUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\SpriteShapeGeometryCache.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\External\LibTessDotNet\Geom.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\External\LibTessDotNet\MeshUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\External\LibTessDotNet\Tess.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\External\LibTessDotNet\Dict.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\BezierUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\Spline.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\External\LibTessDotNet\PriorityHeap.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\External\LibTessDotNet\MeshUtils.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\SpriteShapeController.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\External\LibTessDotNet\PriorityQueue.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\SpriteShape.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\External\LibTessDotNet\Sweep.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Runtime\External\LibTessDotNet\LICENSE.txt" />
@@ -330,6 +330,9 @@
     <Reference Include="Unity.VisualScripting.IonicZip">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst.Cecil.Pdb">
+      <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
+    </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
@@ -348,12 +351,6 @@
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.6\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Cecil.Pdb">
-      <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Burst.Unsafe">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
@@ -365,6 +362,9 @@
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Rocks">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.6\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.1f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>

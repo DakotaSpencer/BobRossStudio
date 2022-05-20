@@ -56,25 +56,25 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\AngleRangeView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\SpriteShapeEditorGUI.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\ContextMenu.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\ObjectMenuCreation\AssetCreation.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\ObjectMenuCreation\GameObjectCreation.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\SpriteShapeControllerEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\SpriteShapeEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\SpriteSelector.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\SpriteShapeEditorTool.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\SceneDragAndDrop.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\AngleRangeGUI.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\EditorSpriteGUIUtility.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\SpriteShapeEditorUtility.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\AngleRangeController.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\SpriteShapeAnalytics.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\SpriteShapeAssetPostProcessor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\SpriteShapeControllerEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\AngleRangeController.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\SpriteShapeEditorAnalytics.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\SpriteShapeHandleUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\AngleRangeView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\ContextMenu.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\SpriteShapeEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\SpriteShapeEditorTool.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\EditorSpriteGUIUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\SpriteShapeEditorGUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\ObjectMenuCreation\AssetCreation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\SpriteSelector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\SceneDragAndDrop.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\AngleRangeGUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\SpriteShapeEditorUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\SpriteShapeAssetPostProcessor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.2d.spriteshape@7.0.4\Editor\Handles\Shaders\Sprites-Inspector.shader" />
@@ -336,6 +336,9 @@
     <Reference Include="Unity.VisualScripting.IonicZip">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Burst.Cecil.Pdb">
+      <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
+    </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
@@ -354,12 +357,6 @@
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.6\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Cecil.Pdb">
-      <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Burst.Unsafe">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
@@ -371,6 +368,9 @@
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Rocks">
       <HintPath>Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.6\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
