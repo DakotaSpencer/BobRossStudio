@@ -10189,7 +10189,7 @@ PrefabInstance:
     - target: {fileID: 7204386029626078986, guid: ce5b21533a095ae4fa36cab4a3fa4e02,
         type: 3}
       propertyPath: m_Convex
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7204386029626078986, guid: ce5b21533a095ae4fa36cab4a3fa4e02,
         type: 3}
@@ -10199,7 +10199,7 @@ PrefabInstance:
     - target: {fileID: 7204386029626078986, guid: ce5b21533a095ae4fa36cab4a3fa4e02,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7204386029626078990, guid: ce5b21533a095ae4fa36cab4a3fa4e02,
         type: 3}
