@@ -19,7 +19,7 @@ public class ColorWheel : MonoBehaviour
 
 
     public TextMeshProUGUI debugText;
-    //[SerializeField] private Transform _tip;
+    [SerializeField] private GameObject _tip;
     Texture2D ColorTexture;
     public ColorEvent onColorpreview;
 
@@ -58,11 +58,8 @@ public class ColorWheel : MonoBehaviour
                 Color color = ColorTexture.GetPixel(texX, texY);//to here is the color logic
                 //this will make lil johnny cube that color you point at
                 onColorpreview?.Invoke(color);
-            
-                if (temp == true) //check for controller input 
-                {
-            
-                }
+
+                _tip.GetComponent<Renderer>().material.color = color;
             }
         }
     }

@@ -8,7 +8,6 @@ public class MoveAndFreeze : MonoBehaviour
 {
     [SerializeField] private Rigidbody m_body;
     [SerializeField] private GameObject objectHeld;
-    bool frozen = false;
 
 
     // Start is called before the first frame update
@@ -23,20 +22,17 @@ public class MoveAndFreeze : MonoBehaviour
     public void Freeze()
     {
         m_body.constraints = RigidbodyConstraints.FreezeAll;
-        frozen = true;
     }
 
     public void Unfreeze()
     {
         m_body.constraints = RigidbodyConstraints.None;
-        frozen = false;
     }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
             m_body.constraints = RigidbodyConstraints.None;
-            frozen = false;
         }
     }
 }
