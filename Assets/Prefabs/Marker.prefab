@@ -476,6 +476,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ColorWheelRightHand
       objectReference: {fileID: 0}
+    - target: {fileID: 6407603000791464977, guid: 2753f79b67bdf1e459d5dbc60a4e1e1a,
+        type: 3}
+      propertyPath: _tip
+      value: 
+      objectReference: {fileID: 5362735183252455015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2753f79b67bdf1e459d5dbc60a4e1e1a, type: 3}
 --- !u!4 &5556463530451508281 stripped
@@ -551,6 +556,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ColorWheelLeftHand
       objectReference: {fileID: 0}
+    - target: {fileID: 4986666886438729937, guid: 06eabbcfd2c4273408ee5a423f1de70f,
+        type: 3}
+      propertyPath: _tip
+      value: 
+      objectReference: {fileID: 5362735183252455015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06eabbcfd2c4273408ee5a423f1de70f, type: 3}
 --- !u!4 &4092536804764924318 stripped
