@@ -18,16 +18,18 @@ public class WhiteboardMarker : MonoBehaviour
     private Quaternion _lastTouchRot;
     private bool _touchedLastFrame;
 
-    void Start()
+    public void Start()
     {
         _renderer = _tip.GetComponent<Renderer>();
         _colors = Enumerable.Repeat(_renderer.material.color, _penSize * _penSize).ToArray();
         _tipHeight = _tip.localScale.y;
     }
-
     // Update is called once per frame
     void Update()
     {
+        _renderer = _tip.GetComponent<Renderer>();
+        _colors = Enumerable.Repeat(_renderer.material.color, _penSize * _penSize).ToArray();
+        _tipHeight = _tip.localScale.y;
         Draw();
     }
 
