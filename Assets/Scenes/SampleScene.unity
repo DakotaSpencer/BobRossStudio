@@ -1729,7 +1729,7 @@ PrefabInstance:
     - target: {fileID: 3501587214148618660, guid: c64b82118d9ab0a428fb28f5d2cf0846,
         type: 3}
       propertyPath: m_TagString
-      value: Freezable
+      value: Whiteboard
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c64b82118d9ab0a428fb28f5d2cf0846, type: 3}
