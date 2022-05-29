@@ -878,6 +878,10 @@
       <Project>{A0E3DAB0-84BA-7FD5-8B6B-A60B8A9CFFA1}</Project>
       <Name>Unity.Burst.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.XR.Management.Samples.Editor.csproj">
+      <Project>{BD37B79E-20FC-2A15-3E28-B81D8E95A5CA}</Project>
+      <Name>Unity.XR.Management.Samples.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.csproj">
       <Project>{2A626DC5-2D1D-F00C-E996-6046D5E07FDE}</Project>
       <Name>Unity.XR.Interaction.Toolkit</Name>
@@ -962,6 +966,10 @@
       <Project>{D0D5C717-3D1A-4B59-125D-0D9AF687F72E}</Project>
       <Name>UnityEditor.XR.LegacyInputHelpers</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.XR.Management.Samples.csproj">
+      <Project>{889C3ABF-54B2-6F4C-04A9-EDB194F86F5F}</Project>
+      <Name>Unity.XR.Management.Samples</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.2D.Common.Runtime.csproj">
       <Project>{B0D8241B-4CAE-3295-4FFF-E34D04AFAADF}</Project>
       <Name>Unity.2D.Common.Runtime</Name>
@@ -1005,14 +1013,6 @@
     <ProjectReference Include="Unity.VisualScripting.State.csproj">
       <Project>{AA4E96CB-BB7E-16BB-3565-779F25717723}</Project>
       <Name>Unity.VisualScripting.State</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.Management.Samples.csproj">
-      <Project>{889C3ABF-54B2-6F4C-04A9-EDB194F86F5F}</Project>
-      <Name>Unity.XR.Management.Samples</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.Management.Samples.Editor.csproj">
-      <Project>{BD37B79E-20FC-2A15-3E28-B81D8E95A5CA}</Project>
-      <Name>Unity.XR.Management.Samples.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
